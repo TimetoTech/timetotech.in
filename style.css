@@ -72,71 +72,60 @@ body { font-family: Arial; margin: 0; padding: 0; }
   border: 2px solid white;
 }
 /* Featured Section CSS */
+/* Featured Section CSS - Fixed */
 .featured {
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 60px auto;
-  padding: 0 20px;
+  padding: 0 40px;
 }
 .section-title {
   text-align: center;
   font-size: 32px;
   color: #1e3a8a;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 .cards {
   display: flex;
-  gap: 25px;
-  flex-wrap: wrap;
+  gap: 30px;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .card {
   background: white;
   border: 1px solid #e5e7eb;
-  border-radius: 12px;
-  padding: 25px;
-  flex: 1;
-  min-width: 280px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  border-radius: 15px;
+  padding: 30px;
+  width: 320px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
   transition: 0.3s;
 }
 .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
 }
 .card h3 {
   color: #1e3a8a;
   margin-top: 0;
+  font-size: 22px;
+}
+.card p {
+  color: #4b5563;
+  line-height: 1.6;
 }
 .card-btn {
   display: inline-block;
-  margin-top: 15px;
+  margin-top: 20px;
   color: #2563eb;
   font-weight: bold;
   text-decoration: none;
 }
 
-/* About Snippet CSS */
-.about-snippet {
-  background: #f3f4f6;
-  text-align: center;
-  padding: 50px 20px;
-  margin-top: 40px;
-}
-.about-snippet h2 {
-  color: #1e3a8a;
-  font-size: 30px;
-}
-.about-snippet p {
-  max-width: 700px;
-  margin: 20px auto 30px auto;
-  font-size: 17px;
-  line-height: 1.7;
-  color: #374151;
-}
-
-/* Mobile Fix */
+/* Mobile Ke Liye */
 @media (max-width: 768px) {
-  .cards {
-    flex-direction: column;
+  .featured {
+    padding: 0 20px;
+  }
+  .card {
+    width: 100%;
   }
 }
