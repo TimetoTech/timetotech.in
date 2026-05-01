@@ -319,3 +319,24 @@ body { font-family: Arial; margin: 0; padding: 0; }
     margin-top: 20px;
   }
 }
+/* FINAL LOGO FIX - Ye sabse last mein daal */
+.hero-wscube .hero-right .hero-logo {
+  width: 100% !important;
+  max-width: 600px !important;
+  height: auto !important;
+  object-fit: contain !important;
+  display: block !important;
+  margin: 0 auto !important;
+}
+
+.hero-wscube {
+  display: flex !important;
+  align-items: center !important;
+}
+
+.hero-right {
+  flex: 1 !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
