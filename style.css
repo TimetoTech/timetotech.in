@@ -238,3 +238,20 @@ body { font-family: Arial; margin: 0; padding: 0; }
   font-weight: 600;
   border-bottom: 1px solid #ffe69c;
 }
+/* Logo Auto-Fix - Kisi bhi size ka logo chalega */
+.hero-right .hero-image-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  min-height: 250px; /* Box ki height fix */
+}
+
+.hero-logo {
+  width: auto;          /* Width auto rahegi */
+  height: auto;         /* Height auto rahegi */
+  max-width: 100%;      /* Box se bahar nahi jayega */
+  max-height: 220px;    /* Max height fix - yahi magic hai */
+  object-fit: contain;  /* Logo khich ke kharab nahi hoga */
+  display: block;
+}
