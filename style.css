@@ -302,22 +302,7 @@ body { font-family: Arial; margin: 0; padding: 0; }
   padding: 20px;
 }
 
-.hero-logo {
-  width: 100%;
-  max-width: 500px;    /* Yahan se bada kar - 500px, 550px try kar */
-  height: auto;
-  object-fit: contain;
-}
 
-/* Mobile ke liye */
-@media (max-width: 768px) {
-  .hero-wscube {
-    flex-direction: column;
-  }
-  .hero-logo {
-    max-width: 600px;
-    margin-top: 20px;
-  }
 }
 /* FINAL LOGO FIX - Ye sabse last mein daal */
 .hero-wscube .hero-right .hero-logo {
