@@ -255,3 +255,13 @@ body { font-family: Arial; margin: 0; padding: 0; }
   object-fit: contain;  /* Logo khich ke kharab nahi hoga */
   display: block;
 }
+/* Mobile pe logo aur chhota */
+@media (max-width: 768px) {
+  .hero-logo {
+    max-height: 150px; /* Mobile pe 150px se bada nahi hoga */
+  }
+  
+  .hero-right .hero-image-box {
+    min-height: 180px;
+  }
+}
